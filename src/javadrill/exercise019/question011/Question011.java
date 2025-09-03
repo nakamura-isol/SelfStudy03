@@ -17,6 +17,7 @@ public class Question011 {
 			int result = num1 / num2;
 
 			// 0で割り算をしようとした場合の例外処理
+			// 上記の割り算で自動発生するので、以下は明示的であり、重複
 			if (num2 == 0) {
 				throw new ArithmeticException("エラー: 0で割り算はできません。");
 			}
@@ -30,7 +31,5 @@ public class Question011 {
 
 	}
 
-	private static int convert(String str) {
-		return Integer.parseInt(str);
-	}
+
 }
