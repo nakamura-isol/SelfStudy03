@@ -6,9 +6,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Main {
-	private static final String DB_URL = "jdbc:mysql://localhost:3306/bank";
-	private static final String DB_USER = "your_username";
-	private static final String DB_PASSWORD = "your_password";
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/javadrill";
+	private static final String DB_USER = "root";
+	private static final String DB_PASSWORD = "matatavi022";
 
 	public static void main(String[] args) {
 		try {
