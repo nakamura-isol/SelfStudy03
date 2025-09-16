@@ -1,0 +1,26 @@
+package javadrill.exercise020.question006;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ListIterator;
+
+/**
+ * 与えられたリストのイテレーターを使用して、文字列の長さが3未満の要素を削除してリストを表示する
+ */
+public class Question006 {
+
+	public static void main(String[] args) {
+		List<String> words = new ArrayList<>(Arrays.asList("Cat", "Dog", "Elephant", "Ant", "Lion", "Tiger"));
+		ListIterator<String> iterator = words.listIterator();
+		  // イテレーターを使用して文字列の長さが3未満の要素を削除
+		while (iterator.hasNext()) {
+			String word = iterator.next();
+			if (word.length() < 4) {
+				iterator.remove();
+			}
+		}
+		System.out.println(words);
+	}
+
+}
