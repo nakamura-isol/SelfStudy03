@@ -5,7 +5,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class C156 {
+public class C156_revise {
 
 	public static void main(String[] args) throws ParseException {
 		Scanner sc = new Scanner(System.in);

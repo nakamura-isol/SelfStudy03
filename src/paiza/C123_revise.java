@@ -2,7 +2,7 @@ package paiza;
 
 import java.util.Scanner;
 
-public class C123 {
+public class C123_revise {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -36,15 +36,15 @@ public class C123 {
 
 				// まだ上限に届いていないなら
 				if (receivedBean > 0) {
-					// 今回配るbeanAmount個と残り枠canReceiveの小さい方だけ加算
+					// 今回配るbeanAmount個と残りreceivedBean個の小さい方だけ加算
 					beans[j] += Math.min(beanAmount, receivedBean);
 				}
 			}
 
 		}
-
-		for (int k = 0; k < beans.length; k++) {
-			System.out.println(beans[k]);
+		// 出力
+		for (int i = 0; i < beans.length; i++) {
+			System.out.println(beans[i]);
 		}
 
 	}
